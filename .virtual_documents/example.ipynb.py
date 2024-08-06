@@ -117,7 +117,7 @@ Hticks = widgets.IntSlider(min = 2, max = 50, value=10, description='Hticks')
 Vticks = widgets.IntSlider(min = 2, max = 50, value=10, description='Vticks')
 
 
-function = widgets.Text(  value = 'get_ipython().run_line_magic("s'", " %(f) , description='w : ')")
+function = widgets.Text(  value = get_ipython().run_line_magic("s", " %(f) , description='w : '"))
 
 frame = widgets.FloatSlider(min=0, max=100, value=100, step = 5, description='anim')
 
@@ -365,7 +365,7 @@ rticks = widgets.IntSlider(min = 2, max = 50, value=20, description='rticks')
 
 fine = widgets.IntSlider(min = 20, max = 100, value=50, description='Fine')
 
-function = widgets.Text( value = 'get_ipython().run_line_magic("s'", " % (trans.mapping(z)) , description='w : ')")
+function = widgets.Text( value = get_ipython().run_line_magic("s", " % (trans.mapping(z)) , description='w : ')"))
 
 frame = widgets.FloatSlider(min=0, max=100, value=100, step = 2, description='anim')
 
